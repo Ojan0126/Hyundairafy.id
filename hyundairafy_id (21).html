@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyundai.Rafy.JKT | Official Hyundai Consultant</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#0a0a0a;
+color:white;
+scroll-behavior:smooth;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 30px;
+background:rgba(0,0,0,.65);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+nav h2{margin:0;font-weight:600}
+
+.hero{
+height:70vh;
+background:url("https://t3.ftcdn.net/jpg/18/52/17/38/360_F_1852173887_NnRYqE06ayQeBw7r2uMiefAA4KJcPGht.jpg") center/cover no-repeat;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+.hero h1{font-size:42px;margin-bottom:10px}
+.hero p{opacity:.85}
+
+.btn{
+margin-top:20px;
+padding:14px 28px;
+background:#002c5f;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+.btn:hover{transform:scale(1.05)}
+
+section{padding:80px 20px;max-width:1150px;margin:auto}
+.section-title{text-align:center;margin-bottom:40px;font-size:28px}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 0 18px rgba(0,0,0,.6);
+cursor:pointer;
+transition:.4s;
+}
+.card:hover{transform:translateY(-6px)}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
+}
+
+.card h3{padding:15px;margin:0}
+.card p{padding:0 15px 15px;opacity:.8}
+
+.spec{
+max-height:0;
+overflow:hidden;
+background:#0f0f0f;
+padding:0 15px;
+transition:max-height .6s ease,padding .4s ease;
+}
+.spec.open{max-height:500px;padding:15px}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px 22px;
+border-radius:50px;
+text-decoration:none;
+color:white;
+font-weight:600;
+}
+
+.fade{opacity:0;transform:translateY(25px);transition:1s}
+.fade.show{opacity:1;transform:translateY(0)}
+
+footer{text-align:center;padding:40px 10px;opacity:.6}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Hyundai.Rafy.JKT</h2>
+</nav>
+
+<div class="hero fade">
+<h1>Progress for Humanity</h1>
+<p>Your Personal Hyundai Consultant Jakarta</p>
+<a class="btn" href="https://wa.me/6289654737807">Consult via WhatsApp</a>
+</div>
+
+<section>
+<h2 class="section-title fade">Hyundai Line Up</h2>
+
+<div class="grid">
+
+<div class="card fade" onclick="toggleSpec(this)">
+<img src="https://www.hyundai.com/content/dam/hyundai/id/id/images/local/artikel/maret-2025/Article-14_D_1120-x-600.jpg">
+<h3>Hyundai Creta</h3>
+<p>Compact SUV modern untuk daily driving.</p>
+<div class="spec">
+<ul>
+<li>SmartSense Safety</li>
+<li>10.25" Display</li>
+<li>Modern SUV Design</li>
+</ul>
+<a class="btn" href="https://wa.me/6289654737807?text=Info%20Hyundai%20Creta">Tanya Unit</a>
+</div></a>
+</div>
+</div>
+
+<div class="card fade" onclick="toggleSpec(this)">
+<img src="https://www.hyundai.com/content/dam/hyundai/id/id/images/find-a-car/pip/stargazer-cartenz-x/highlight/Banner_D_1920X1080.jpg">
+<h3>Hyundai Stargazer</h3>
+<p>MPV keluarga modern Indonesia.</p>
+<div class="spec">
+<ul>
+<li>Captain Seat</li>
+<li>ADAS Feature</li>
+<li>Spacious Cabin</li>
+</ul>
+<a class="btn" href="https://wa.me/6289654737807?text=Info%20Hyundai%20Stargazer">Tanya Unit</a>
+</div></a>
+</div>
+</div>
+
+<div class="card fade" onclick="toggleSpec(this)">
+<img src="https://pictures.dealer.com/j/johnsonhyundai/1234/a45b1a27cd734bccba94bda161dfe004.jpg">
+<h3>Hyundai Palisade</h3>
+<p>Luxury SUV flagship Hyundai.</p>
+<div class="spec">
+<ul>
+<li>Premium Interior</li>
+<li>Diesel Performance</li>
+<li>Full Safety Feature</li>
+</ul>
+<a class="btn" href="https://wa.me/6289654737807?text=Info%20Hyundai%20Palisade">Tanya Unit</a>
+</div></a>
+</div>
+</div>
+
+<div class="card fade" onclick="toggleSpec(this)">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7OLkfYW27F3tS9XL5nQCYUWreIV67C6lphckdSiokOgju8AsPu7zQFc7_&s=10">
+<h3>Hyundai Santa Fe</h3>
+<p>Premium SUV stylish & powerful.</p>
+<div class="spec">
+<ul>
+<li>Hybrid Technology</li>
+<li>Wide Cabin</li>
+<li>SmartSense Safety</li>
+</ul>
+<a class="btn" href="https://wa.me/6289654737807?text=Info%20Hyundai%20Santa%20Fe">Tanya Unit</a>
+</div></a>
+</div>
+</div>
+
+<div class="card fade" onclick="toggleSpec(this)">
+<img src="https://hyundaibintarojaya.com/wp-content/uploads/2025/06/Gallery-6-1-Kolom-pc.jpg">
+<h3>Hyundai IONIQ 5</h3>
+<p>Electric vehicle futuristik Hyundai.</p>
+<div class="spec">
+<ul>
+<li>Full Electric</li>
+<li>Ultra Fast Charging</li>
+<li>Silent Driving</li>
+</ul>
+<a class="btn" href="https://wa.me/6289654737807?text=Info%20Hyundai%20IONIQ%205">Tanya Unit</a>
+</div></a>
+</div>
+</div>
+
+<div class="card fade" onclick="toggleSpec(this)">
+<img src="https://www.hyundaitangerangcityofficial.com/wp-content/uploads/2024/08/Kona-Electric-Banner.jpg">
+<h3>Hyundai Kona Electric</h3>
+<p>SUV listrik modern & efisien.</p>
+<div class="spec">
+<ul>
+<li>Long Range Battery</li>
+<li>Digital Cockpit</li>
+<li>Eco Driving</li>
+</ul>
+<a class="btn" href="https://wa.me/6289654737807?text=Info%20Hyundai%20Kona%20Electric">Tanya Unit</a>
+</div></a>
+</div>
+</div>
+
+</div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/6289654737807">Chat Sales</a>
+
+<footer>
+© 2026 Hyundai.Rafy.JKT — Personal Hyundai Consultant Jakarta
+</footer>
+
+<script>
+function toggleSpec(card){
+const spec=card.querySelector('.spec');
+spec.classList.toggle('open');
+}
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){entry.target.classList.add('show');}
+});
+});
+
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
